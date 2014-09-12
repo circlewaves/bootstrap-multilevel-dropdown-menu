@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 3.2 - Multilevel dropdown example</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap Multilevel Dropdown CSS -->
+    <link href="../src/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">MegaStore</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">All Categories</a></li>
+						<li class="divider"></li>
+            <li class="dropdown"><a href="#">Shoes <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">All Shoes</a></li>
+								<li><a href="#">Formal Shoes</a></li>
+								<li class="dropdown"><a href="#">Boots <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Chelsea Boots</a></li>
+										<li class="dropdown"><a href="#">Special Boots <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">Desert Boots</a></li>
+												<li><a href="#">Orthopedic Boots</a></li>
+												<li><a href="#">Army Boots</a></li>
+											</ul>	
+										</li>
+										<li class="dropdown"><a href="#">Formal Boots <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#">New Collection</a></li>
+												<li><a href="#">Chukka Boots</a></li>
+												<li><a href="#">Loafers</a></li>
+											</ul>	
+										</li>
+										<li><a href="#">Other Boots</a></li>
+									</ul>	
+								</li>
+								<li><a href="#">Plimsolls</a></li>
+							</ul>						
+						</li>
+						<li><a href="#">Accessories</a></li>
+						<li><a href="#">Bags</a></li>
+						<li><a href="#">Jeans</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown"><a href="#">Our stores <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Melbourne</a></li>
+								<li><a href="#">New York</a></li>
+								<li><a href="#">London</a></li>
+							</ul>						
+						</li>
+            <li class="dropdown"><a href="#">Open Positions <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown"><a href="#">Melbourne <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Sales Manager</a></li>
+									</ul>	
+								</li>
+								<li class="dropdown"><a href="#">London <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Sales Manager</a></li>
+										<li><a href="#">Account Manager</a></li>
+									</ul>	
+								</li>
+							</ul>						
+						</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Login</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shooping Cart <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Checkout</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Clear shopping cart</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+		<!-- Bootstrap Multilevel Dropdown JS -->
+    <script src="../src/script.js"></script>
+  </body>
+</html>

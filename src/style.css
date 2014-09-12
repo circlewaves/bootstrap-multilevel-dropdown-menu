@@ -1,0 +1,36 @@
+/**
+*----------------------------------------- 
+* Bootstrap Multilevel Menu 
+* Change default caret(down) to right caret (for desktop screens only)
+*-----------------------------------------
+*/
+
+ul.dropdown-menu .caret {	
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-left: 4px solid;
+	border-right: 4px solid transparent;
+	border-top: 4px solid transparent;	
+	border-bottom: 4px solid transparent;	
+}
+
+@media (max-width: 767px) {
+	
+ul.dropdown-menu .caret {	
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	}
+	
+}
+
+
+ul.dropdown-menu ul.dropdown-menu{top:0;left:100%;}
