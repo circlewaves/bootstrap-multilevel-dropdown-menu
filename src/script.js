@@ -9,23 +9,16 @@ $('ul.dropdown-menu a').on('click', function(event) {
     // Avoid having the menu to close when clicking
     event.stopPropagation(); 
 	
-		// find parent element (<li> tag)
-		var cur_nav_element=$(this).parent();
-    // Re-add .open to parent sub-menu item
-    //$(this).parent().addClass('open');
-    //$(this).parent().find("ul").parent().find("li.dropdown").addClass('open');
-	
+	// find parent element (<li> tag)
+	var cur_nav_element=$(this).parent();
 	cur_nav_element.parent().find('li.dropdown').not($(this).parent()).removeClass('open');
 	cur_nav_element.toggleClass('open');
-
 });
 	
 $('ul.navbar-nav a.dropdown-toggle').on('click', function(event) {	
-		// find parent element (<li> tag)
-		var cur_nav_element=$(this).parent();
-		cur_nav_element.parent().find('li.dropdown').not($(this).parent()).removeClass('open');
-
-
+	// find parent element (<li> tag)
+	var cur_nav_element=$(this).parent();
+	cur_nav_element.parent().find('li.dropdown').not($(this).parent()).removeClass('open');
 });	
 
 	});
