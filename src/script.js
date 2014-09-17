@@ -3,7 +3,7 @@
 
 	$(function () {
 
-$('ul.dropdown-menu a').on('click', function(event) {
+$('ul.dropdown-menu .dropdown>a').on('click', function(event) {
     // Avoid following the href location when clicking
     event.preventDefault(); 
     // Avoid having the menu to close when clicking
